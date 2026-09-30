@@ -1,0 +1,80 @@
+[project]
+name = "Domain FAQ Support Chatbot Docs"
+site_name = "Domain FAQ Support Chatbot Using Fine Tuned SLMs"
+site_description = "Visual technical documentation for Domain FAQ Support Chatbot Using Fine Tuned Small Language Models"
+site_url = "https://rbijo.github.io/dfcs.docs/"
+repo_url = "https://github.com/rbijo/dfcs.docs"
+repo_name = "rbijo/dfcs.docs"
+docs_dir = "docs"
+site_dir = "site"
+
+[theme]
+name = "zensical"
+language = "en"
+palette = { primary = "indigo", accent = "blue" }
+features = [
+    "navigation.tabs",
+    "navigation.sections",
+    "navigation.expand",
+    "navigation.top",
+    "toc.integrate",
+    "search.suggest",
+    "search.highlight",
+    "content.code.copy"
+]
+
+[[project.nav]]
+name = "Home"
+url = "index.md"
+icon = "fontawesome/solid/house"
+
+[[project.nav]]
+name = "Development"
+url = "development/index.md"
+icon = "fontawesome/solid/code"
+children = [
+    { name = "Dataset Build", url = "development/dataset-build/index.md", icon = "fontawesome/solid/database", children = [
+        { name = "Data Collection", url = "development/dataset-build/data-collection.md", icon = "fontawesome/solid/download" },
+        { name = "Data Cleaning", url = "development/dataset-build/data-cleaning.md", icon = "fontawesome/solid/filter" },
+        { name = "Dataset Formatting", url = "development/dataset-build/dataset-formatting.md", icon = "fontawesome/solid/table" },
+        { name = "Dataset Validation", url = "development/dataset-build/dataset-validation.md", icon = "fontawesome/solid/circle-check" }
+    ]},
+    { name = "Fine Tuning the Model", url = "development/fine-tuning/index.md", icon = "fontawesome/solid/brain", children = [
+        { name = "Model Selection", url = "development/fine-tuning/model-selection.md", icon = "fontawesome/solid/bullseye" },
+        { name = "Training", url = "development/fine-tuning/training.md", icon = "fontawesome/solid/play" },
+        { name = "Evaluation", url = "development/fine-tuning/evaluation.md", icon = "fontawesome/solid/chart-line" },
+        { name = "Results", url = "development/fine-tuning/results.md", icon = "fontawesome/solid/trophy" }
+    ]},
+    { name = "Developing the Website", url = "development/website/index.md", icon = "fontawesome/solid/globe", children = [
+        { name = "Architecture", url = "development/website/architecture.md", icon = "fontawesome/solid/sitemap" },
+        { name = "Frontend", url = "development/website/frontend.md", icon = "fontawesome/solid/desktop" },
+        { name = "Backend", url = "development/website/backend.md", icon = "fontawesome/solid/server" },
+        { name = "Deployment", url = "development/website/deployment.md", icon = "fontawesome/solid/rocket" }
+    ]},
+    { name = "References", url = "development/references.md", icon = "fontawesome/solid/book-bookmark" }
+]
+
+[[project.nav]]
+name = "For the Devs"
+url = "for-the-devs/index.md"
+icon = "fontawesome/solid/wrench"
+children = [
+    { name = "Changelog", url = "for-the-devs/changelog.md", icon = "fontawesome/solid/clock-rotate-left" },
+    { name = "Getting Started", url = "for-the-devs/getting-started.md", icon = "fontawesome/solid/flag" },
+    { name = "Installing Zensical", url = "for-the-devs/installing-zensical.md", icon = "fontawesome/solid/download" },
+    { name = "Project Structure", url = "for-the-devs/project-structure.md", icon = "fontawesome/solid/folder-tree" },
+    { name = "Writing Documentation", url = "for-the-devs/writing-documentation.md", icon = "fontawesome/solid/pen-to-square" },
+    { name = "Zensical Features", url = "for-the-devs/zensical-features.md", icon = "fontawesome/solid/wand-magic-sparkles" },
+    { name = "Navigation", url = "for-the-devs/navigation.md", icon = "fontawesome/solid/compass" },
+    { name = "Images and Assets", url = "for-the-devs/images-assets.md", icon = "fontawesome/solid/image" },
+    { name = "Diagrams", url = "for-the-devs/diagrams.md", icon = "fontawesome/solid/diagram-project" },
+    { name = "Badges", url = "for-the-devs/badges.md", icon = "fontawesome/solid/award" },
+    { name = "References", url = "for-the-devs/references.md", icon = "fontawesome/solid/link" },
+    { name = "Zensical Studio", url = "for-the-devs/zensical-studio.md", icon = "fontawesome/solid/sliders" },
+    { name = "Local Development", url = "for-the-devs/local-development.md", icon = "fontawesome/solid/terminal" },
+    { name = "Git Workflow", url = "for-the-devs/git-workflow.md", icon = "fontawesome/solid/code-branch" },
+    { name = "Testing and Validation", url = "for-the-devs/testing-validation.md", icon = "fontawesome/solid/vial" },
+    { name = "Building the Site", url = "for-the-devs/building.md", icon = "fontawesome/solid/box" },
+    { name = "Publishing to GitHub Pages", url = "for-the-devs/publishing.md", icon = "fontawesome/solid/cloud-arrow-up" },
+    { name = "Troubleshooting", url = "for-the-devs/troubleshooting.md", icon = "fontawesome/solid/bug" }
+]
