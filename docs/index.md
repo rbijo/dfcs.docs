@@ -90,9 +90,9 @@ The project is developed by a dedicated 3-member engineering team:
 
 | Team Member | Primary Focus Areas |
 | :--- | :--- |
-| **Member 1** | Data Pipeline, Data Cleaning & FAQ Formatting |
-| **Member 2** | SLM Selection, PEFT/LoRA Fine-Tuning & Model Evaluation |
-| **Member 3** | Backend API, System Architecture & Web UI Integration |
+| **Rahul James** | Data Pipeline, Data Cleaning & FAQ Formatting |
+| **Robin Bijo** | SLM Selection, PEFT/LoRA Fine-Tuning & Model Evaluation |
+| **Jey Sudharsan** | Backend API, System Architecture & Website Integration |
 
 ---
 
